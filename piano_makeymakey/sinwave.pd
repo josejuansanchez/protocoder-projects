@@ -1,0 +1,19 @@
+#N canvas 1339 541 566 377 10;
+#X obj 88 175 bng 15 250 50 0 empty trigger r:trigger 17 7 0 10 -262144
+-1 -1;
+#X msg 88 206 1 10 \, 0 1000 10;
+#X obj 88 248 vline~;
+#X obj 88 284 *~;
+#X obj 88 331 dac~;
+#X floatatom 225 98 5 0 0 0 r:midinote midinote -, f 5;
+#X obj 227 185 mtof;
+#X obj 227 219 osc~ 220;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 3 0 4 1;
+#X connect 5 0 6 0;
+#X connect 5 0 0 0;
+#X connect 6 0 7 0;
+#X connect 7 0 3 1;
