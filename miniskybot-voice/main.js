@@ -1,6 +1,8 @@
 /*
 *   
 *   Voice controlled MiniSkybot 2 (Protocoder + Arduino + Bluetooth )
+*   
+*   Authors: @MiguelAngel_LV and @josejuansanchez
 *
 */
 
