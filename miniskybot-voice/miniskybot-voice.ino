@@ -66,8 +66,10 @@ void setup()
 
 void loop() 
 {
-  if (!BT.available())
+  if (!BT.available()) {
+    delay(100);
     return;
+  }
 
   switch(BT.read()) {
     case 'F': 
